@@ -108,12 +108,12 @@ const Footer = () => {
               <MdOutlineAlternateEmail className="h-5 w-5" />
             </a>
           </div>
+          <p className="text-gray-500">Call Us</p>
+          <p>
+            <IoCallOutline className="mr-2 inline-block h-5 w-5" />
+            +92 (335) 2765432
+          </p>
         </div>
-        <p className="text-gray-500">Call Us</p>
-        <p>
-          <IoCallOutline className="mr-2 inline-block h-5 w-5" />
-          +92 (335) 2765432
-        </p>
       </div>
       <div className="container mx-auto mt-12 border-t border-e-gray-200 px-4 pt-6 lg:px-0">
         <p className="text-center text-sm tracking-tighter text-gray-500">
