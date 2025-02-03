@@ -1,4 +1,5 @@
 import React from "react";
+import { MdDelete } from "react-icons/md";
 
 const CartContents = () => {
   const products = [
@@ -99,7 +100,7 @@ const CartContents = () => {
       {products.map((product, index) => (
         <div
           key={index}
-          className="flex items-start justify-baseline border-b py-4"
+          className="flex items-start justify-between border-b py-4"
         >
           <div className="flex items-center">
             <img
@@ -122,6 +123,12 @@ const CartContents = () => {
                 </button>
               </div>
             </div>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <p className="font-medium">${product.price.toLocaleString()}</p>
+            <button>
+              <MdDelete className="mt-2 h-5 w-5 text-red-500" />
+            </button>
           </div>
         </div>
       ))}
