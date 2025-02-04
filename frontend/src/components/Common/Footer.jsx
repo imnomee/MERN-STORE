@@ -119,9 +119,19 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="container mx-auto mt-12 border-t border-e-gray-200 px-4 pt-6 lg:px-0">
-        <p className="text-center text-sm tracking-tighter text-gray-500">
-          &copy; 2025, Jaan Dry Fruits. All Rights Reserved.
+      <div className="container mx-auto mt-12 flex flex-col justify-between border-t border-e-gray-200 px-4 pt-6 md:flex-row lg:px-0">
+        <p className="text-center text-sm tracking-tighter text-gray-500 md:w-3/4">
+          &copy; 2025 - Jaan Dry Fruits. All Rights Reserved.
+        </p>
+        <p className="text-center text-xs md:w-1/4 md:text-right">
+          Powered by:{" "}
+          <a
+            href="https://nrportfolio.site"
+            target="_blank"
+            rel="noopener noreferer"
+          >
+            Nomee
+          </a>
         </p>
       </div>
     </footer>
