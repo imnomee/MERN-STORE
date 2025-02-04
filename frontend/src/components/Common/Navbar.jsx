@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import CartDrawer from "../Layout/CartDrawer";
 import { useState } from "react";
+import { assets } from "../../assets/assets";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -20,46 +21,51 @@ const Navbar = () => {
     <>
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
         <div>
-          <Link to="/" className="text-2xl font-extrabold">
-            Gettit
+          <Link to="/">
+            <img
+              src={assets.logo}
+              alt="Jaan Dry Fruits"
+              width={60}
+              height={60}
+            />
           </Link>
         </div>
         <div className="hidden space-x-6 md:flex">
           <Link
             to="#"
-            className="text-sm font-medium text-gray-700 uppercase hover:text-black"
+            className="text-sm font-medium text-gray-700 uppercase hover:text-orange-500"
           >
-            Men
+            Nuts
           </Link>
           <Link
             to="#"
-            className="text-sm font-medium text-gray-700 uppercase hover:text-black"
+            className="text-sm font-medium text-gray-700 uppercase hover:text-orange-500"
           >
-            Women
+            Seeds
           </Link>
           <Link
             to="#"
-            className="text-sm font-medium text-gray-700 uppercase hover:text-black"
+            className="text-sm font-medium text-gray-700 uppercase hover:text-orange-500"
           >
-            Children
+            Dried Fruits
           </Link>
           <Link
             to="#"
-            className="text-sm font-medium text-gray-700 uppercase hover:text-black"
+            className="text-sm font-medium text-gray-700 uppercase hover:text-orange-500"
           >
-            FootWear
+            Exotic and Premium
           </Link>
         </div>
         <div className="flex items-center space-x-4">
-          <Link to="/profile" className="hover:text-black">
+          <Link to="/profile" className="hover:text-orange-500">
             <FaRegUser className="h-5 w-5 text-gray-700" />
           </Link>
           <button
             onClick={toggleCartDrawer}
-            className="relative hover:text-black"
+            className="relative hover:text-orange-500"
           >
             <FaShoppingBag className="h-6 w-6 text-gray-700" />
-            <span className="absolute -top-1 rounded-full bg-red-600 px-1 text-xs text-white">
+            <span className="absolute -top-1 rounded-full bg-orange-500 px-1 text-xs text-white">
               4
             </span>
           </button>
@@ -87,30 +93,30 @@ const Navbar = () => {
             <Link
               to="#"
               onClick={toggleNavDrawer}
-              className="block text-gray-600 hover:text-black"
+              className="block text-gray-600 hover:text-orange-500"
             >
-              Men
+              Nuts
             </Link>
             <Link
               to="#"
               onClick={toggleNavDrawer}
-              className="block text-gray-600 hover:text-black"
+              className="block text-gray-600 hover:text-orange-500"
             >
-              Women
+              Seeds
             </Link>
             <Link
               to="#"
               onClick={toggleNavDrawer}
-              className="block text-gray-600 hover:text-black"
+              className="block text-gray-600 hover:text-orange-500"
             >
-              Children
+              Dry Fruits
             </Link>
             <Link
               to="#"
               onClick={toggleNavDrawer}
-              className="block text-gray-600 hover:text-black"
+              className="block text-gray-600 hover:text-orange-500"
             >
-              Footwear
+              Exotic and Premium
             </Link>
           </nav>
         </div>

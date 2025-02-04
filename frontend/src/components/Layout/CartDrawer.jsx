@@ -16,7 +16,7 @@ const CartDrawer = ({ drawerOpen, toggleCartDrawer }) => {
         <CartContents />
       </div>
       <div className="sticky bottom-0 bg-white p-4">
-        <button className="w-full rounded-lg bg-black py-3 font-semibold text-white transition-all hover:bg-gray-800">
+        <button className="w-full rounded-lg bg-black py-3 font-semibold text-white transition-all hover:bg-orange-500">
           Checkout
         </button>
         <p className="mt-2 text-center text-sm tracking-tighter text-gray-500">
