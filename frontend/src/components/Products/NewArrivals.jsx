@@ -78,7 +78,7 @@ const NewArrivals = () => {
               className="h-[500px] w-full rounded-lg object-cover"
               draggable="false"
             />
-            <div className="absolute right-0 bottom-0 left-0 rounded-b-lg p-4 text-white backdrop-blur-md">
+            <div className="absolute right-0 bottom-0 left-0 rounded-b-lg p-4 font-bold text-gray-800 backdrop-blur-md">
               <Link to={`/product/${item._id}`} className="block">
                 <h4 className="font-medium">{item.name}</h4>
                 <p className="mt-1">$ {item.price}</p>

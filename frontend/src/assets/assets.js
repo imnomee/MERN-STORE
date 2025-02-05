@@ -116,10 +116,32 @@ const newArrivals = [
   },
 ];
 
+const bestSeller = {
+  name: "Spicy Nimko",
+  price: 120,
+  originalprice: 150,
+  description: "This is the spiciest nimko you have had",
+  brand: "Jaan",
+  material: "Nimko",
+  sizes: ["S", "M", "L", "XL"],
+  colors: ["Red", "Blue", "Black"],
+  images: [
+    {
+      url: "https://picsum.photos/500/500?random=9",
+      altText: "Stylish Nimko",
+    },
+    {
+      url: "https://picsum.photos/500/500?random=8",
+      altText: "Stylish Nimko 2",
+    },
+  ],
+};
+
 export const assets = {
   hero,
   logo,
   nimko,
   dryfruit,
   newArrivals,
+  bestSeller,
 };
