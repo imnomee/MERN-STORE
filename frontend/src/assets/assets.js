@@ -1,6 +1,6 @@
 import hero from "./hero.jpg";
 import logo from "./logo.png";
-import nimko from "./Nimko.webp";
+import nimko from "./nimko.webp";
 import dryfruit from "./dryfruit.jpg";
 
 const newArrivals = [
