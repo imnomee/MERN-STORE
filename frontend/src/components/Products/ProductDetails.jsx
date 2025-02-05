@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { assets } from "../../assets/assets";
+import { toast } from "sonner";
 
 const ProductDetails = () => {
   const [mainImage, setMainImage] = useState("");
@@ -14,6 +15,25 @@ const ProductDetails = () => {
     } else if (action === "minus" && quantity > 1) {
       setQuantity((prev) => prev - 1);
     }
+  };
+
+  const handleAddToCart = () => {
+    if (!selectedColor || !selectedSize) {
+      toast.error("Please select a Size and Color", {
+        duration: 1000,
+      });
+      return;
+    }
+    setIsButtonDisabled(true);
+    setTimeout(() => {
+      toast.success("Product added to cart.", {
+        duration: 1000,
+      });
+      setIsButtonDisabled(false);
+      setQuantity(1);
+      setSelectedColor("");
+      setSelectedSize("");
+    }, 2000);
   };
 
   useEffect(() => {
@@ -118,8 +138,12 @@ const ProductDetails = () => {
                 </button>
               </div>
             </div>
-            <button className="mb-4 w-full rounded bg-yellow-500 px-6 py-2 text-white">
-              ADD TO CART
+            <button
+              onClick={handleAddToCart}
+              disabled={isButtonDisabled}
+              className={`mb-4 w-full rounded px-6 py-2 text-white ${isButtonDisabled ? "cursor-not-allowed bg-gray-500" : "bg-yellow-500"}`}
+            >
+              {isButtonDisabled ? "Adding..." : "Add to Cart"}
             </button>
             <div className="mt-10 text-gray-700">
               <h3 className="mb-4 text-xl font-bold">Characteristics:</h3>

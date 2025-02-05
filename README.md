@@ -10,6 +10,7 @@ npm install tailwindcss @tailwindcss/vite
 npm install -D prettier prettier-plugin-tailwindcss
 
 npm install react-router-dom react-icons
+npm install sonner
 
 ### color:
 
