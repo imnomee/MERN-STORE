@@ -25,7 +25,7 @@ const Hero = () => {
           </p>
           <Link
             to="#"
-            className="rounded-sm bg-white px-6 py-2 text-xl text-gray-950 transition hover:bg-orange-500 hover:text-white"
+            className="rounded-sm bg-white px-10 py-4 text-xl font-medium text-gray-950 transition hover:bg-orange-500 hover:text-white"
           >
             Shop Now
           </Link>
