@@ -2,6 +2,7 @@ import hero from "./hero.jpg";
 import logo from "./logo.png";
 import nimko from "./nimko.webp";
 import dryfruit from "./dryfruit.jpg";
+import login from "./login.webp";
 
 const newArrivals = [
   {
@@ -282,4 +283,5 @@ export const assets = {
   bestSeller,
   similarProducts,
   topCollection,
+  login,
 };
