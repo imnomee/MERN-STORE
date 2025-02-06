@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { assets } from "../../assets/assets";
 import { toast } from "sonner";
+import ProductsGrid from "./ProductsGrid";
 
 const ProductDetails = () => {
   const [mainImage, setMainImage] = useState("");
@@ -161,6 +162,12 @@ const ProductDetails = () => {
               </table>
             </div>
           </div>
+        </div>
+        <div className="mt-20">
+          <h2 className="mb-4 text-center text-2xl font-medium">
+            You May Also Like
+          </h2>
+          <ProductsGrid products={assets.similarProducts} />
         </div>
       </div>
     </div>
